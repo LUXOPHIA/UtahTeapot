@@ -1,19 +1,19 @@
-unit LUX.Matrix.L4;
+ï»¿unit LUX.Matrix.L4;
 
-interface //#################################################################### ¡
+interface //#################################################################### â– 
 
 uses System.Math.Vectors,
      LUX, LUX.Matrix.L2, LUX.Matrix.L3, LUX.D3;
 
-type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yŒ^z
+type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€å‹ã€‘
 
-     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yƒŒƒR[ƒhz
+     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€ãƒ¬ã‚³ãƒ¼ãƒ‰ã€‘
 
      //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TSingleM4
 
      TSingleM4 = record
      public
-       ///// ƒAƒNƒZƒX
+       ///// ã‚¢ã‚¯ã‚»ã‚¹
        function GetAxisX :TSingle3D;
        procedure SetAxisX( const AxisX_:TSingle3D );
        function GetAxisY :TSingle3D;
@@ -33,30 +33,30 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                                  _31_, _32_, _33_, _34_,
                                  _41_, _42_, _43_, _44_ :Single ); overload;
        constructor Create( const X_,Y_,Z_,P_:TSingle3D ); overload;
-       ///// ƒvƒƒpƒeƒB
+       ///// ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
        property AxisX :TSingle3D read GetAxisX write SetAxisX;
        property AxisY :TSingle3D read GetAxisY write SetAxisY;
        property AxisZ :TSingle3D read GetAxisZ write SetAxisZ;
        property AxisP :TSingle3D read GetAxisP write SetAxisP;
-       ///// ‰‰Zq
+       ///// æ¼”ç®—å­
        class operator Multiply( const A_,B_:TSingleM4 ) :TSingleM4;
        class operator Multiply( const A_:Single; const B_:TSingleM4 ) :TSingleM4;
        class operator Multiply( const A_:TSingleM4; const B_:Single ) :TSingleM4;
        class operator Multiply( const A_:TSingleM4; const B_:TSingleRay3D ) :TSingleRay3D;
        class operator Divide( const A_:TSingleM4; const B_:Single ) :TSingleM4;
-       ///// Œ^•ÏŠ·
+       ///// å‹å¤‰æ›
        class operator Implicit( const V_:Single ) :TSingleM4;
        class operator Implicit( const V_:TMatrix3D ) :TSingleM4;
        class operator Implicit( const V_:TSingleM4 ) :TMatrix3D;
        class operator Implicit( const V_:TSingleM3 ) :TSingleM4;
        class operator Implicit( const V_:TSingleM4 ) :TSingleM3;
-       ///// ƒƒ\ƒbƒh
+       ///// ãƒ¡ã‚½ãƒƒãƒ‰
        function MultPos( const B_:TSingle3D ) :TSingle3D;
        function MultVec( const B_:TSingle3D ) :TSingle3D;
        function Adjugate :TSingleM4;
        function Transpose :TSingleM4;
        function Inverse :TSingleM4;
-       ///// ’è”
+       ///// å®šæ•°
        class function Translate( const X_,Y_,Z_:Single ) :TSingleM4; static;
        class function Scale( const X_,Y_,Z_:Single ) :TSingleM4; static;
        class function RotateX( const T_:Single ) :TSingleM4; static;
@@ -69,7 +69,7 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
      TDoubleM4 = record
      public
-       ///// ƒAƒNƒZƒX
+       ///// ã‚¢ã‚¯ã‚»ã‚¹
        function GetAxisX :TDouble3D;
        procedure SetAxisX( const AxisX_:TDouble3D );
        function GetAxisY :TDouble3D;
@@ -89,18 +89,18 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                                  _31_, _32_, _33_, _34_,
                                  _41_, _42_, _43_, _44_ :Double ); overload;
        constructor Create( const X_,Y_,Z_,P_:TDouble3D ); overload;
-       ///// ƒvƒƒpƒeƒB
+       ///// ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
        property AxisX :TDouble3D read GetAxisX write SetAxisX;
        property AxisY :TDouble3D read GetAxisY write SetAxisY;
        property AxisZ :TDouble3D read GetAxisZ write SetAxisZ;
        property AxisP :TDouble3D read GetAxisP write SetAxisP;
-       ///// ‰‰Zq
+       ///// æ¼”ç®—å­
        class operator Multiply( const A_,B_:TDoubleM4 ) :TDoubleM4;
-       class operator Multiply( const A_:Double; const B_:TDoubleM4 ) :TDoubleM4;
+       class operator Multiply( const A_:Double; const B_:TDoubleM4 ) :TDoubleM4;                     Â»
        class operator Multiply( const A_:TDoubleM4; const B_:Double ) :TDoubleM4;
        class operator Multiply( const A_:TDoubleM4; const B_:TDoubleRay3D ) :TDoubleRay3D;
        class operator Divide( const A_:TDoubleM4; const B_:Double ) :TDoubleM4;
-       ///// Œ^•ÏŠ·
+       ///// å‹å¤‰æ›
        class operator Implicit( const V_:Double ) :TDoubleM4;
        class operator Implicit( const V_:TMatrix3D ) :TDoubleM4;
        class operator Implicit( const V_:TDoubleM4 ) :TMatrix3D;
@@ -108,13 +108,13 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
        class operator Implicit( const V_:TDoubleM4 ) :TSingleM4;
        class operator Implicit( const V_:TDoubleM3 ) :TDoubleM4;
        class operator Implicit( const V_:TDoubleM4 ) :TDoubleM3;
-       ///// ƒƒ\ƒbƒh
+       ///// ãƒ¡ã‚½ãƒƒãƒ‰
        function MultPos( const B_:TDouble3D ) :TDouble3D;
        function MultVec( const B_:TDouble3D ) :TDouble3D;
        function Adjugate :TDoubleM4;
        function Transpose :TDoubleM4;
        function Inverse :TDoubleM4;
-       ///// ’è”
+       ///// å®šæ•°
        class function Translate( const X_,Y_,Z_:Double ) :TDoubleM4; static;
        class function Scale( const X_,Y_,Z_:Double ) :TDoubleM4; static;
        class function RotateX( const T_:Double ) :TDoubleM4; static;
@@ -129,19 +129,19 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
      private
        _o :TSingleM4;
        _i :TSingleM4;
-       ///// ƒAƒNƒZƒX
+       ///// ã‚¢ã‚¯ã‚»ã‚¹
        procedure Seto( const o_:TSingleM4 );
        procedure Seti( const i_:TSingleM4 );
      public
-       ///// ƒvƒƒpƒeƒB
+       ///// ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
        property o :TSingleM4 read _o write Seto;
        property i :TSingleM4 read _i write Seti;
-       ///// ‰‰Zq
+       ///// æ¼”ç®—å­
        class operator Multiply( const A_,B_:TSingleDualM4 ) :TSingleDualM4;
        class operator Multiply( const A_:Single; B_:TSingleDualM4 ) :TSingleDualM4;
        class operator Multiply( const A_:TSingleDualM4; B_:Single ) :TSingleDualM4;
        class operator Divide( const A_:TSingleDualM4; const B_:Single ) :TSingleDualM4;
-       ///// ’è”
+       ///// å®šæ•°
        class function Translate( const X_,Y_,Z_:Single ) :TSingleDualM4; static;
        class function Scale( const X_,Y_,Z_:Single ) :TSingleDualM4; static;
        class function RotateX( const T_:Single ) :TSingleDualM4; static;
@@ -150,25 +150,25 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
        class function Identify :TSingleDualM4; static;
      end;
 
-     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yƒNƒ‰ƒXz
+     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€ã‚¯ãƒ©ã‚¹ã€‘
 
-//const //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$y’è”z
+//const //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€å®šæ•°ã€‘
 
-//var //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$y•Ï”z
+//var //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€å¤‰æ•°ã€‘
 
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yƒ‹[ƒ`ƒ“z
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€ãƒ«ãƒ¼ãƒãƒ³ã€‘
 
-implementation //############################################################### ¡
+implementation //############################################################### â– 
 
 uses System.Math;
 
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yƒŒƒR[ƒhz
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€ãƒ¬ã‚³ãƒ¼ãƒ‰ã€‘
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TSingleM4
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& private
 
-/////////////////////////////////////////////////////////////////////// ƒAƒNƒZƒX
+/////////////////////////////////////////////////////////////////////// ã‚¢ã‚¯ã‚»ã‚¹
 
 function TSingleM4.GetAxisX :TSingle3D;
 begin
@@ -271,7 +271,7 @@ begin
      _41 :=    0;  _42 :=    0;  _43 :=    0;  _44 :=    1;
 end;
 
-///////////////////////////////////////////////////////////////////////// ‰‰Zq
+///////////////////////////////////////////////////////////////////////// æ¼”ç®—å­
 
 class operator TSingleM4.Multiply( const A_,B_:TSingleM4 ) :TSingleM4;
 begin
@@ -341,7 +341,7 @@ begin
      end
 end;
 
-///////////////////////////////////////////////////////////////////////// Œ^•ÏŠ·
+///////////////////////////////////////////////////////////////////////// å‹å¤‰æ›
 
 class operator TSingleM4.Implicit( const V_:Single ) :TSingleM4;
 begin
@@ -601,7 +601,7 @@ end;
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& private
 
-/////////////////////////////////////////////////////////////////////// ƒAƒNƒZƒX
+/////////////////////////////////////////////////////////////////////// ã‚¢ã‚¯ã‚»ã‚¹
 
 function TDoubleM4.GetAxisX :TDouble3D;
 begin
@@ -704,7 +704,7 @@ begin
      _41 :=    0;  _42 :=    0;  _43 :=    0;  _44 :=    1;
 end;
 
-///////////////////////////////////////////////////////////////////////// ‰‰Zq
+///////////////////////////////////////////////////////////////////////// æ¼”ç®—å­
 
 class operator TDoubleM4.Multiply( const A_,B_:TDoubleM4 ) :TDoubleM4;
 begin
@@ -774,7 +774,7 @@ begin
      end
 end;
 
-///////////////////////////////////////////////////////////////////////// Œ^•ÏŠ·
+///////////////////////////////////////////////////////////////////////// å‹å¤‰æ›
 
 class operator TDoubleM4.Implicit( const V_:Double ) :TDoubleM4;
 begin
@@ -974,7 +974,7 @@ begin
                    + _14 * A._41 )
 end;
 
-/////////////////////////////////////////////////////////////////////////// ’è”
+/////////////////////////////////////////////////////////////////////////// å®šæ•°
 
 class function TDoubleM4.Translate( const X_,Y_,Z_:Double ) :TDoubleM4;
 begin
@@ -1058,7 +1058,7 @@ end;
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& private
 
-/////////////////////////////////////////////////////////////////////// ƒAƒNƒZƒX
+/////////////////////////////////////////////////////////////////////// ã‚¢ã‚¯ã‚»ã‚¹
 
 procedure TSingleDualM4.Seto( const o_:TSingleM4 );
 begin
@@ -1074,7 +1074,7 @@ end;
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& public
 
-///////////////////////////////////////////////////////////////////////// ‰‰Zq
+///////////////////////////////////////////////////////////////////////// æ¼”ç®—å­
 
 class operator TSingleDualM4.Multiply( const A_,B_:TSingleDualM4 ) :TSingleDualM4;
 begin
@@ -1112,7 +1112,7 @@ begin
      end
 end;
 
-/////////////////////////////////////////////////////////////////////////// ’è”
+/////////////////////////////////////////////////////////////////////////// å®šæ•°
 
 class function TSingleDualM4.Translate( const X_,Y_,Z_:Single ) :TSingleDualM4;
 begin
@@ -1168,14 +1168,14 @@ begin
      end;
 end;
 
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yƒNƒ‰ƒXz
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€ã‚¯ãƒ©ã‚¹ã€‘
 
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$yƒ‹[ƒ`ƒ“z
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ã€ãƒ«ãƒ¼ãƒãƒ³ã€‘
 
-//##############################################################################  
+//############################################################################## â–¡
 
-initialization //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ‰Šú‰»
+initialization //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ åˆæœŸåŒ–
 
-finalization //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ÅI‰»
+finalization //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ æœ€çµ‚åŒ–
 
-end. //######################################################################### ¡
+end. //######################################################################### â– 
