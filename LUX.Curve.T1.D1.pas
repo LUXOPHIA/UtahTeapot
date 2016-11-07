@@ -3,7 +3,8 @@
 interface //#################################################################### ■
 
 uses LUX,
-     LUX.D1, LUX.D1.V4;
+     LUX.D1,
+     LUX.D4;
 
 //type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$【型】
 
@@ -49,15 +50,25 @@ function BSplin4( const X_:Double ) :Double; overload;
 function BSplin4( const X_:TdSingle ) :TdSingle; overload;
 function BSplin4( const X_:TdDouble ) :TdDouble; overload;
 
-function Bezie4( const T_:Single ) :TSingleV4; overload;
-function Bezie4( const T_:Double ) :TDoubleV4; overload;
-function Bezie4( const T_:TdSingle ) :TdSingleV4; overload;
-function Bezie4( const T_:TdDouble ) :TdDoubleV4; overload;
+procedure BSplin4( const T_:Single; out Ws_:TSingle4D ); overload;
+procedure BSplin4( const T_:Double; out Ws_:TDouble4D ); overload;
+procedure BSplin4( const T_:TdSingle; out Ws_:TdSingle4D ); overload;
+procedure BSplin4( const T_:TdDouble; out Ws_:TdDouble4D ); overload;
 
-function Bezie4( const Ps_:TSingleV4; const T_:Single ) :Single; overload;
-function Bezie4( const Ps_:TDoubleV4; const T_:Double ) :Double; overload;
-function Bezie4( const Ps_:TdSingleV4; const T_:TdSingle ) :TdSingle; overload;
-function Bezie4( const Ps_:TdDoubleV4; const T_:TdDouble ) :TdDouble; overload;
+function BSplin4( const Ps_:TSingle4D; const T_:Single ) :Single; overload;
+function BSplin4( const Ps_:TDouble4D; const T_:Double ) :Double; overload;
+function BSplin4( const Ps_:TdSingle4D; const T_:TdSingle ) :TdSingle; overload;
+function BSplin4( const Ps_:TdDouble4D; const T_:TdDouble ) :TdDouble; overload;
+
+function Bezie4( const T_:Single ) :TSingle4D; overload;
+function Bezie4( const T_:Double ) :TDouble4D; overload;
+function Bezie4( const T_:TdSingle ) :TdSingle4D; overload;
+function Bezie4( const T_:TdDouble ) :TdDouble4D; overload;
+
+function Bezie4( const Ps_:TSingle4D; const T_:Single ) :Single; overload;
+function Bezie4( const Ps_:TDouble4D; const T_:Double ) :Double; overload;
+function Bezie4( const Ps_:TdSingle4D; const T_:TdSingle ) :TdSingle; overload;
+function Bezie4( const Ps_:TdDouble4D; const T_:TdDouble ) :TdDouble; overload;
 
 implementation //############################################################### ■
 
@@ -481,7 +492,103 @@ end;
 
 //------------------------------------------------------------------------------
 
-function Bezie4( const T_:Single ) :TSingleV4;
+procedure BSplin4( const T_:Single; out Ws_:TSingle4D );
+begin
+     with Ws_ do
+     begin
+          _1 := BSplin4( T_ + 1 );
+          _2 := BSplin4( T_     );
+          _3 := BSplin4( T_ - 1 );
+          _4 := BSplin4( T_ - 2 );
+     end;
+end;
+
+procedure BSplin4( const T_:Double; out Ws_:TDouble4D );
+begin
+     with Ws_ do
+     begin
+          _1 := BSplin4( T_ + 1 );
+          _2 := BSplin4( T_     );
+          _3 := BSplin4( T_ - 1 );
+          _4 := BSplin4( T_ - 2 );
+     end;
+end;
+
+procedure BSplin4( const T_:TdSingle; out Ws_:TdSingle4D );
+begin
+     with Ws_ do
+     begin
+          _1 := BSplin4( T_ + 1 );
+          _2 := BSplin4( T_     );
+          _3 := BSplin4( T_ - 1 );
+          _4 := BSplin4( T_ - 2 );
+     end;
+end;
+
+procedure BSplin4( const T_:TdDouble; out Ws_:TdDouble4D );
+begin
+     with Ws_ do
+     begin
+          _1 := BSplin4( T_ + 1 );
+          _2 := BSplin4( T_     );
+          _3 := BSplin4( T_ - 1 );
+          _4 := BSplin4( T_ - 2 );
+     end;
+end;
+
+//------------------------------------------------------------------------------
+
+function BSplin4( const Ps_:TSingle4D; const T_:Single ) :Single;
+var
+   Ws :TSingle4D;
+begin
+     BSplin4( T_, Ws );
+
+     Result := Ws._1 * Ps_._1
+             + Ws._2 * Ps_._2
+             + Ws._3 * Ps_._3
+             + Ws._4 * Ps_._4;
+end;
+
+function BSplin4( const Ps_:TDouble4D; const T_:Double ) :Double;
+var
+   Ws :TDouble4D;
+begin
+     BSplin4( T_, Ws );
+
+     Result := Ws._1 * Ps_._1
+             + Ws._2 * Ps_._2
+             + Ws._3 * Ps_._3
+             + Ws._4 * Ps_._4;
+end;
+
+function BSplin4( const Ps_:TdSingle4D; const T_:TdSingle ) :TdSingle;
+var
+   Ws :TdSingle4D;
+begin
+     BSplin4( T_, Ws );
+
+     Result := Ws._1 * Ps_._1
+             + Ws._2 * Ps_._2
+             + Ws._3 * Ps_._3
+             + Ws._4 * Ps_._4;
+end;
+
+function BSplin4( const Ps_:TdDouble4D; const T_:TdDouble ) :TdDouble;
+var
+   Ws :TdDouble4D;
+begin
+     BSplin4( T_, Ws );
+
+     Result := Ws._1 * Ps_._1
+             + Ws._2 * Ps_._2
+             + Ws._3 * Ps_._3
+             + Ws._4 * Ps_._4;
+end;
+
+//------------------------------------------------------------------------------
+
+function Bezie4( const T_:Single ) :TSingle4D;
 var
    T1, T2, T3,
    S1, S2, S3 :Single;
@@ -499,7 +606,7 @@ begin
      end;
 end;
 
-function Bezie4( const T_:Double ) :TDoubleV4;
+function Bezie4( const T_:Double ) :TDouble4D;
 var
    T1, T2, T3,
    S1, S2, S3 :Double;
@@ -517,7 +624,7 @@ begin
      end;
 end;
 
-function Bezie4( const T_:TdSingle ) :TdSingleV4;
+function Bezie4( const T_:TdSingle ) :TdSingle4D;
 var
    T1, T2, T3,
    S1, S2, S3 :TdSingle;
@@ -535,7 +642,7 @@ begin
      end;
 end;
 
-function Bezie4( const T_:TdDouble ) :TdDoubleV4;
+function Bezie4( const T_:TdDouble ) :TdDouble4D;
 var
    T1, T2, T3,
    S1, S2, S3 :TdDouble;
@@ -555,7 +662,7 @@ end;
 
 //------------------------------------------------------------------------------
 
-function Bezie4( const Ps_:TSingleV4; const T_:Single ) :Single;
+function Bezie4( const Ps_:TSingle4D; const T_:Single ) :Single;
 begin
      with Bezie4( T_ ) do Result := _1 * Ps_._1
                                   + _2 * Ps_._2
@@ -563,7 +670,7 @@ begin
                                   + _4 * Ps_._4;
 end;
 
-function Bezie4( const Ps_:TDoubleV4; const T_:Double ) :Double;
+function Bezie4( const Ps_:TDouble4D; const T_:Double ) :Double;
 begin
      with Bezie4( T_ ) do Result := _1 * Ps_._1
                                   + _2 * Ps_._2
@@ -571,7 +678,7 @@ begin
                                   + _4 * Ps_._4;
 end;
 
-function Bezie4( const Ps_:TdSingleV4; const T_:TdSingle ) :TdSingle;
+function Bezie4( const Ps_:TdSingle4D; const T_:TdSingle ) :TdSingle;
 begin
      with Bezie4( T_ ) do Result := _1 * Ps_._1
                                   + _2 * Ps_._2
@@ -579,7 +686,7 @@ begin
                                   + _4 * Ps_._4;
 end;
 
-function Bezie4( const Ps_:TdDoubleV4; const T_:TdDouble ) :TdDouble;
+function Bezie4( const Ps_:TdDouble4D; const T_:TdDouble ) :TdDouble;
 begin
      with Bezie4( T_ ) do Result := _1 * Ps_._1
                                   + _2 * Ps_._2
