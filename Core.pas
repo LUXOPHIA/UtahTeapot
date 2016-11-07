@@ -4,7 +4,7 @@ interface //####################################################################
 
 uses System.Types, System.Classes, System.Math.Vectors,
      FMX.Types3D, FMX.Controls3D, FMX.MaterialSources,
-     LUX, LUX.D1, LUX.D1.V4, LUX.D2, LUX.D3, LUX.D3.M4, LUX.Matrix.L4;
+     LUX, LUX.D1, LUX.D2, LUX.D3, LUX.D3.M4, LUX.Matrix.L4;
 
 type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$【型】
 
