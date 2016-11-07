@@ -18,7 +18,7 @@ type //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
        procedure SetM( const Y_,X_:Integer; const M_:Integer );
      public
        ///// プロパティ
-       property o[ const Y_,X_:Integer ] :Integer read GetM write SetM; default;
+       property M[ const Y_,X_:Integer ] :Integer read GetM write SetM; default;
      case Integer of
       0:( _ :array [ 1..4, 1..4 ] of Integer; );
       1:( _11, _12, _13, _14,
