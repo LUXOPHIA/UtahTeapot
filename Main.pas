@@ -10,7 +10,7 @@ uses
   FMX.EditBox, FMX.SpinBox, FMX.Objects, FMX.Controls.Presentation,
   FMX.Objects3D, FMX.Controls3D, FMX.Viewport3D,
   LUX.FMX,
-  Core;
+  Core, FMX.ScrollBox, FMX.Memo;
 
 type
   TForm1 = class(TForm)
@@ -26,6 +26,8 @@ type
       Image1: TImage;
     SpinBox1: TSpinBox;
     Label1: TLabel;
+    Memo1: TMemo;
+    Memo2: TMemo;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure Viewport3D1MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Single);
@@ -62,7 +64,7 @@ begin
 
      with _TensorShape do
      begin
-          Parent   := _TeapotShape;
+          //Parent   := _TeapotShape;
           MeshData := _TeapotShape.Geometry;
           AxisLeng := 0.1;
      end;
@@ -113,9 +115,9 @@ end;
 
 procedure TForm1.SpinBox1Change(Sender: TObject);
 begin
-     _TeapotShape.DivN := Round( SpinBox1.Value );
+     //_TeapotShape.DivN := Round( SpinBox1.Value );
 
-     _TensorShape.MakeShape;
+     //_TensorShape.MakeShape;
 end;
 
 end. //######################################################################### Å°

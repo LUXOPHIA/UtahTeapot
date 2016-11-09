@@ -41,7 +41,7 @@ object Form1: TForm1
         Quanternion = '(-0.258819043636322,0,0,0.965925872325897)'
         object Camera1: TCamera
           AngleOfView = 45.000000000000000000
-          Position.Z = -8.000000000000000000
+          Position.Z = -6.000000000000000000
           Width = 1.000000000000000000
           Height = 1.000000000000000000
           Depth = 1.000000000000000000
@@ -119,6 +119,30 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TextSettings.HorzAlign = Trailing
       Text = 'DivN :'
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.X = 10.000000000000000000
+      Position.Y = 250.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 171.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Viewport.Width = 197.000000000000000000
+      Viewport.Height = 167.000000000000000000
+    end
+    object Memo2: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.X = 10.000000000000000000
+      Position.Y = 430.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 181.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 197.000000000000000000
+      Viewport.Height = 177.000000000000000000
     end
   end
   object LightMaterialSource1: TLightMaterialSource
