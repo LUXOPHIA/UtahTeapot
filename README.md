@@ -6,7 +6,7 @@ We faithfully polygonize the original model by cubic Bezier surfaces (Normal, Ta
 Data posted on [The History of The Teapot - Wikiid](https://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot) are 9+1 Bezier surfaces omitting mirror symmetric patches and control points (The true original model has no bottom).  
 [The History of The Teapot - Wikiid](https://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot) に掲載されているデータは、面対称なパッチと制御点を省いた 9+1 パッチのベジエ曲面である（本当のオリジナルモデルには"底"がなかった）。
 
-Complementing the omitted Bezier surface will result in 32 patches (It's 28 patches as an original model), and the number of net control points avoiding duplication on shared edges is 290 points.  
+Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 patches as an original model), and the number of net control points avoiding duplication on shared edges is 290 points.  
 省かれているベジエ曲面を補完すると 32 パッチとなり（オリジナルモデルとしては 28 パッチ）、共有エッジの重複を避けた正味の制御点は 290 点となる。
 
 ![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08%2B30.png)
