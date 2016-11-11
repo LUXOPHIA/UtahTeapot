@@ -13,7 +13,7 @@ Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 pat
 
 ![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08-30.png)
 
-##▼ ３次[ベジエ曲面](https://www.wikiwand.com/ja/%E3%83%99%E3%82%B8%E3%82%A7%E6%9B%B2%E7%B7%9A)(Cubic [Bézier Surface](https://www.wikiwand.com/en/B%C3%A9zier_surface)) × 32
+##▼ Cubic [Bézier Surface](https://www.wikiwand.com/en/B%C3%A9zier_surface)（３次[ベジエ曲面](https://www.wikiwand.com/ja/%E3%83%99%E3%82%B8%E3%82%A7%E6%9B%B2%E7%B7%9A)）× 32
 ```
 ▼ Lid
 ( (   0,   0,   0,   0 ) (   1,   2,   3,   4 ) (   5,   5,   5,   5 ) (   6,   7,   8,   9 ) )
@@ -55,7 +55,7 @@ Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 pat
 ( ( 264, 271, 272, 261 ) ( 276, 284, 285, 273 ) ( 280, 286, 287, 277 ) ( 128, 288, 289, 281 ) )
 ```
 
-##▼ 制御点(Control Point) × 290
+##▼ Control Point（制御点）× 290
 ```
 (  0      ,  0      , +3.15    ) (  0      , -0.8    , +3.15    )
 ( +0.45   , -0.8    , +3.15    ) ( +0.8    , -0.45   , +3.15    )
