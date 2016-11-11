@@ -204,8 +204,6 @@ Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 pat
 ( -2      , +0.3    , +0.9     ) ( -1.9    , +0.3    , +0.6     )
 ```
 
-### ▼ Martin Newell bought this teapot in a Utah department store. 
-![http://s7.computerhistory.org/is/image/CHM/x398.84p-03-02?$re-medium$](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/557)
-
-### ▼ Martin Newell’s drawing of the Utah Teapot
-![http://s7.computerhistory.org/is/image/CHM/102695462-03-01?$re-medium$](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206)
+* [The Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/557)
+* [Martin Newell’s drawing of the Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/556)
+* [Wire-frame model of the Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/554)
