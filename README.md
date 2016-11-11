@@ -204,6 +204,7 @@ Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 pat
 ( -2      , +0.3    , +0.9     ) ( -1.9    , +0.3    , +0.6     )
 ```
 
+### Reference（参考文献）
 * [The Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/557)
 * [Martin Newell’s drawing of the Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/556)
 * [Wire-frame model of the Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/554)
