@@ -1,6 +1,6 @@
-﻿# UtahTeapot
+﻿# The Utah Teapot
 
-Bezier 曲面による Newell's Teapot のポリゴン化。
+３次ベジエ曲面によって、Newell's Teapot のポリゴン化。
 
 [The History of The Teapot - Wikiid](https://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot) に掲載されているデータは、面対称なパッチと制御点を省いた 9+1 パッチのベジエ曲面である（本当のオリジナルモデルには"底"がなかった）。
 
@@ -10,7 +10,7 @@ Bezier 曲面による Newell's Teapot のポリゴン化。
 
 ![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08-30.png)
 
-##▼ 三次ベジエ曲面 × 32
+##▼ ３次ベジエ曲面：Cubic Bézier Surface × 32
 ```
 ▼ Lid
 ( (   0,   0,   0,   0 ) (   1,   2,   3,   4 ) (   5,   5,   5,   5 ) (   6,   7,   8,   9 ) )
@@ -52,7 +52,7 @@ Bezier 曲面による Newell's Teapot のポリゴン化。
 ( ( 264, 271, 272, 261 ) ( 276, 284, 285, 273 ) ( 280, 286, 287, 277 ) ( 128, 288, 289, 281 ) )
 ```
 
-##▼ 制御点 × 290
+##▼ 制御点：Control Points × 290
 ```
 (  0      ,  0      , +3.15    ) (  0      , -0.8    , +3.15    )
 ( +0.45   , -0.8    , +3.15    ) ( +0.8    , -0.45   , +3.15    )
