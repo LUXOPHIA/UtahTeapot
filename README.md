@@ -206,11 +206,11 @@ Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 pat
 
 ### REFERENCE（参考文献）
 
-* [The Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/557)  
-![The Utah Teapot - CHM Revolution](http://s7.computerhistory.org/is/image/CHM/x398.84p-03-02?$re-medium$)
+* [The Utah Teapot - CHM Revolution  
+![The Utah Teapot - CHM Revolution](http://s7.computerhistory.org/is/image/CHM/x398.84p-03-02?$re-medium$)](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/557)
 
-* [Martin Newell’s drawing of the Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/556)  
-![Martin Newell’s drawing of the Utah Teapot - CHM Revolution](http://s7.computerhistory.org/is/image/CHM/102695462-03-01?$re-medium$)
+* [Martin Newell’s drawing of the Utah Teapot - CHM Revolution  
+![Martin Newell’s drawing of the Utah Teapot - CHM Revolution](http://s7.computerhistory.org/is/image/CHM/102695462-03-01?$re-medium$)](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/556)
 
-* [Wire-frame model of the Utah Teapot - CHM Revolution](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/554)  
-![Wire-frame model of the Utah Teapot - CHM Revolution](http://s7.computerhistory.org/is/image/CHM/102672453-03-01?$re-medium$)
+* [Wire-frame model of the Utah Teapot - CHM Revolution  
+![Wire-frame model of the Utah Teapot - CHM Revolution](http://s7.computerhistory.org/is/image/CHM/102672453-03-01?$re-medium$)](http://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/554)
