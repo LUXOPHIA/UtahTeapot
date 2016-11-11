@@ -4,7 +4,7 @@ Bezier 曲面による Newell's Teapot のポリゴン化。
 
 [The History of The Teapot - Wikiid](https://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot) に掲載されているデータは、面対称なパッチと制御点を省いた 9+1 パッチのベジエ曲面である（本当のオリジナルモデルには"底"がなかった）。
 
-省かれているベジエ曲面を補完すると合計 32 パッチとなり（オリジナルモデルとしては総 28 パッチ）、共有エッジの重複を避けた正味の制御点は 290 点となる。
+省かれているベジエ曲面を補完すると 32 パッチとなり（オリジナルモデルとしては 28 パッチ）、共有エッジの重複を避けた正味の制御点は 290 点となる。
 
 ![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08%2B30.png)
 
