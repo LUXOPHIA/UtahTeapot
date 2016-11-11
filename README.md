@@ -1,5 +1,7 @@
 ﻿# [Utah Teapot](https://www.wikiwand.com/en/Utah_teapot)（[ユタ･ティーポット](https://www.wikiwand.com/ja/Utah_teapot)）
 
+![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08%2B30.png)
+
 We faithfully polygonize the original model by cubic Bezier surfaces (Normal, Tangent and Bi-normal vectors are computed accurately by automatic differentiation).  
 ３次ベジエ曲面によって、オリジナルモデルを忠実にポリゴン化する（法線/接線/従法線も自動微分により正確に算出する）。
 
@@ -8,8 +10,6 @@ The data posted on "[The History of The Teapot - Wikiid](https://www.sjbaker.org
 
 Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 patches as an original model), and the number of net control points avoiding duplication on shared edges is 290 points.  
 省かれているベジエ曲面を補完すると 32 パッチとなり（オリジナルモデルとしては 28 パッチ）、共有エッジの重複を避けた正味の制御点は 290 点となる。
-
-![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08%2B30.png)
 
 ![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/6be5792c5dde88e00a2b98825335c42475ac4cc5/--------/_SCREENSHOT/UtahTeapot_08-30.png)
 
