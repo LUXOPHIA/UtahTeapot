@@ -1,6 +1,6 @@
 ﻿# [Utah Teapot](https://www.wikiwand.com/en/Utah_teapot)（[ユタ･ティーポット](https://www.wikiwand.com/ja/Utah_teapot)）
 
-We faithfully polygonize the original model by cubic Bezier surface (Normal, Tangent and Bi-normal vectors are computed accurately by automatic differentiation).  
+We faithfully polygonize the original model by cubic Bezier surfaces (Normal, Tangent and Bi-normal vectors are computed accurately by automatic differentiation).  
 ３次ベジエ曲面によって、オリジナルモデルを忠実にポリゴン化する（法線/接線/従法線も自動微分により正確に算出する）。
 
 Data posted on [The History of The Teapot - Wikiid](https://www.sjbaker.org/wiki/index.php?title=The_History_of_The_Teapot) are 9+1 Bezier surfaces omitting mirror symmetric patches and control points (The true original model has no bottom).  
