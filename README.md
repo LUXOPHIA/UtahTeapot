@@ -204,9 +204,9 @@ Complementing the omitted Bezier surfaces will result in 32 patches (It's 28 pat
 ( -2      , +0.3    , +0.9     ) ( -1.9    , +0.3    , +0.6     )
 ```
 
-![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/57e0f75cfefe2c94b647cd949c67e1ab56c59cff/--------/_SCREENSHOT/UtahTeapot_32-Spout.png)
+![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/514fe958022d8eb0febad2967ef5ca4c10f286a3/--------/_SCREENSHOT/UtahTeapot_32-Spout.png)
 
-![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/57e0f75cfefe2c94b647cd949c67e1ab56c59cff/--------/_SCREENSHOT/UtahTeapot_32-Lid.png)
+![](https://bytebucket.org/LUXOPHIA/utahteapot/raw/514fe958022d8eb0febad2967ef5ca4c10f286a3/--------/_SCREENSHOT/UtahTeapot_32-Lid.png)
 
 ### REFERENCE（参考文献）
 
